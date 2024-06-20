@@ -1,0 +1,30 @@
+.spinner-container {
+    display: inline-block; /* Display as inline block to stay within button */
+    position: relative; /* Positioning relative to adjust spinner */
+    width: 100%; /* Ensure spinner takes full width of button */
+    height: 100%; /* Ensure spinner takes full height of button */
+    text-align: center; /* Center spinner horizontally */
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db; /* Adjust colors as needed */
+    border-radius: 50%;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    animation: spin 1s linear infinite;
+    position: absolute; /* Position spinner absolutely */
+    top: 50%; /* Center spinner vertically */
+    left: 50%; /* Center spinner horizontally */
+    transform: translate(-50%, -50%); /* Center spinner precisely */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
